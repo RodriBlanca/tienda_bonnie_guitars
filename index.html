@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bonnie guitars es una tienda de guitarras que trabaja con las mejores marcas. Cuenta además con una gran variedad de accesorios que mejorarán tu experiencia a la hora de tocar el instrumento.">
+    <meta name="keywords" content="tienda, guitarras, bonnie guitars, instrumentos, musicales, audio, música">
+
+    <!--NORMALIZE-->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!--CSS-->
+    <!--<link rel="stylesheet" href="./css/estilos.css">-->
+
+    <!--SASS/CSS-->
+    <link rel="stylesheet" href="./sass/styles.css">
+
+    <title>Bonnie guitars - tienda de guitarras y accesorios</title>
+</head>
+
+<body class="body">
+
+    <!--HEADER-->
+    <header class="header">
+
+        <!--LOGO DEL HEADER-->
+        <div class="header-logo">
+            <h1 class="header-logo__title">Bonnie <span class="header-logo__title2">guitars</span></h1>
+        </div>
+
+        <!--MENÚ NAVEGABLE-->
+        <nav class="header-nav">
+            <ul class="header-menu">
+                <li class="header-menu__item"><a class="header-menu__link"
+                        href="./secciones/guitarras.html">Guitarras</a></li>
+                <li class="header-menu__item"><a class="header-menu__link"
+                        href="./secciones/accesorios.html">Accesorios</a></li>
+                <li class="header-menu__item"><a class="header-menu__link" href="./secciones/reviews.html">Reviews</a>
+                </li>
+                <li class="header-menu__item"><a class="header-menu__link" href="./secciones/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--BOTÓN MENÚ MOBILE-->
+        <div class="header-boton">
+            <input type="checkbox" class="header-boton__toggler">
+            <div class="header-boton__hamburger">
+                <div></div>
+            </div>
+            <div class="boton-menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="./secciones/guitarras.html">Guitarras</a></li>
+                            <li><a href="./secciones/accesorios.html">Accesorios</a></li>
+                            <li><a href="./secciones/reviews.html">Reviews</a></li>
+                            <li><a href="./secciones/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--REDES-->
+        <div class="header-redes">
+
+            <!--INSTAGRAM SVG-->
+            <a class="header-redes__link" href="https://www.instagram.com/">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg class="header-redes__img" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512"
+                    height="512">
+                    <g>
+                        <path fill="currentcolor"
+                            d="M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M256,152   c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M437,0H75C33.6,0,0,33.6,0,75v362   c0,41.4,33.6,75,75,75h362c41.4,0,75-33.6,75-75V75C512,33.6,478.4,0,437,0z M256,392c-74.399,0-135-60.601-135-135   c0-74.401,60.601-135,135-135s135,60.599,135,135C391,331.399,330.399,392,256,392z M421,122c-16.5,0-30-13.5-30-30s13.5-30,30-30   s30,13.5,30,30S437.5,122,421,122z M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z    M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M256,152c-57.9,0-105,47.1-105,105   s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z" />
+                    </g>
+                </svg>
+            </a>
+
+            <!--YOUTUBE SVG-->
+            <a class="header-redes__link" href="https://www.youtube.com/">
+                <svg class="header-redes__img" id="Bold" enable-background="new 0 0 24 24" height="512"
+                    viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentcolor"
+                        d="m23.469 5.929.03.196c-.29-1.029-1.073-1.823-2.068-2.112l-.021-.005c-1.871-.508-9.4-.508-9.4-.508s-7.51-.01-9.4.508c-1.014.294-1.798 1.088-2.083 2.096l-.005.021c-.699 3.651-.704 8.038.031 11.947l-.031-.198c.29 1.029 1.073 1.823 2.068 2.112l.021.005c1.869.509 9.4.509 9.4.509s7.509 0 9.4-.509c1.015-.294 1.799-1.088 2.084-2.096l.005-.021c.318-1.698.5-3.652.5-5.648 0-.073 0-.147-.001-.221.001-.068.001-.149.001-.23 0-1.997-.182-3.951-.531-5.846zm-13.861 9.722v-7.293l6.266 3.652z" />
+                </svg>
+            </a>
+
+            <!--FACEBOOK SVG-->
+            <a class="header-redes__link" href="https://www.facebook.com/">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg class="header-redes__img" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path fill="currentcolor" d="M448,0H64C28.704,0,0,28.704,0,64v384c0,35.296,28.704,64,64,64h192V336h-64v-80h64v-64c0-53.024,42.976-96,96-96h64v80
+			h-32c-17.664,0-32-1.664-32,16v64h80l-32,80h-48v176h96c35.296,0,64-28.704,64-64V64C512,28.704,483.296,0,448,0z" />
+                        </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                </svg>
+            </a>
+
+            <!--TWITTER SVG-->
+            <a class="header-redes__link" href="https://twitter.com/">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg class="header-redes__img" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path fill="currentcolor" d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z" />
+                        </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main class="main">
+
+        <!--GALERÍA DEL MAIN MOBILE-->
+        <div class="main-galery">
+            <div class="main-container instrumentos">
+                <a class="main-galery__link" href=""><img class="main-galery__img"
+                        src="./material/pexels-cristian-benavides-2049414.jpg" alt="Instrumentos"></a>
+            </div>
+            <div class="main-container acustica">
+                <a class="main-galery__link" href=""><img class="main-galery__img"
+                        src="./material/pexels-viktor-mogilat-3977174.jpg" alt="Guitarra acústica"></a>
+            </div>
+            <div class="main-container puas">
+                <a class="main-galery__link" href=""><img class="main-galery__img"
+                        src="./material/pexels-rombo-3383703.jpg" alt="Puas"></a>
+            </div>
+        </div>
+
+        <!--GALERÍA-->
+        <div class="galeria">
+            <a class="galeria-instrumentos" href="./secciones/guitarras.html"></a>
+            <a class="galeria-acustica" href="./secciones/guitarras.html"></a>
+            <a class="galeria-puas" href="./secciones/accesorios.html"></a>
+        </div>
+
+        <!--CARRUSEL CON LOS PRODUCTOS MÁS VENDIDOS-->
+        <div class="container-carrusel">
+            <div class="carrusel">
+                <h2 class="carrusel-title">Los productos más vendidos</h2>
+                <figure>
+                    <img src="./material/gibson-les-paul.webp" alt="Gibson Les Paul">
+                    <img src="./material/fender-stratocaster-2.webp" alt="Fender Stratocaster">
+                    <img src="./material/gibson-sg.webp" alt="Gibson SG">
+                    <img src="./material/fender-telecaster.webp" alt="Fender Telecaster">
+                </figure>
+            </div>
+        </div>
+
+        <div class="vendidos-container">
+            <h2>Los productos más vendidos</h2>
+            <div class="productos-container">
+                <div class="productos-card__1"></div>
+                <div class="productos-card__2"></div>
+                <div class="productos-card__3"></div>
+                <div class="productos-card__4"></div>
+            </div>
+        </div>
+
+
+        <!--BANNER A ACCESORIOS / CON IMAGEN DE FONDO QUE HACE "SCROLL"-->
+        <div class="banner">
+            <!--TEXTO QUE VA ENCIMA DE LA IMAGEN-->
+            <a class="banner-link" href="./secciones/accesorios.html" target="_blank">
+                <h2 class="banner-text">Encontrá los mejores accesorios para tu guitarra en Bonnie guitars</h2>
+            </a>
+        </div>
+
+        </div>
+
+        <!--VIDEO QUE LLEVE A LA SECCIÓN "REVIEW"-->
+        <div class="main-review">
+            <iframe class="main-review__iframe" width="560" height="315" src="https://www.youtube.com/embed/StzfQEruOyw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <p class="main-review__text">Puedes seguir viendo más de nuestros reviews haciendo click <a
+                    class="main-review__link" href="./secciones/reviews.html">aquí</a>.
+            </p>
+        </div>
+
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+
+        <!--LOGO DEL FOOTER-->
+        <div class="footer-logo">
+            <h2 class="footer-logo__title">Bonnie <span class="footer-logo__title2">guitars</span></h2>
+        </div>
+
+        <!--FOOTER MENÚ-->
+        <nav class="footer-nav">
+            <ul class="footer-menu">
+                <li class="footer-menu__item">Atención al cliente
+                    <ul class="footer-submenu">
+                        <li class="footer-submenu__item">
+                            <a class="footer-submenu__link" href="">Ayuda</a>
+                        </li>
+                        <li class="footer-submenu__item">
+                            <a class="footer-submenu__link" href="">Garantía</a>
+                        </li>
+                        <li class="footer-submenu__item">
+                            <a class="footer-submenu__link" href="">Manual</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-menu__item">Nuestra compañía
+                    <ul class="footer-submenu">
+                        <li class="footer-submenu__item">
+                            <a class="footer-submenu__link" href="">Historia</a>
+                        </li>
+                        <li class="footer-submenu__item">
+                            <a class="footer-submenu__link" href="./secciones/contacto.html">Contacto</a>
+                        </li>
+                        <li class="footer-submenu__item">
+                            <a class="footer-submenu__link" href="Trabaja con Nosotros">Trabajar con Nosotros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-menu__item">Productos
+                    <ul class="footer-submenu">
+                        <li class="footer-submenu__item">
+                            <a class="footer-submenu__link" href="https://www.gibson.com/">Gibson</a>
+                        </li>
+                        <li class="footer-submenu__item">
+                            <a class="footer-submenu__link" href="https://shop.fender.com/es/intl/start">Fender</a>
+                        </li>
+                        <li class="footer-submenu__item">
+                            <a class="footer-submenu__link" href="https://www.taylorguitars.com/">Taylor</a>
+                        </li>
+                        <li class="footer-submenu__item">
+                            <a class="footer-submenu__link" href="https://www.cortguitars.com/">Cort</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!--FOOTER REDES-->
+        <div class="footer-redes">
+
+            <!--INSTAGRAM SVG-->
+            <a class="footer-redes__link" href="https://www.instagram.com/">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg class="footer-redes__img" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512"
+                    height="512">
+                    <g>
+                        <path fill="currentcolor"
+                            d="M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M256,152   c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M437,0H75C33.6,0,0,33.6,0,75v362   c0,41.4,33.6,75,75,75h362c41.4,0,75-33.6,75-75V75C512,33.6,478.4,0,437,0z M256,392c-74.399,0-135-60.601-135-135   c0-74.401,60.601-135,135-135s135,60.599,135,135C391,331.399,330.399,392,256,392z M421,122c-16.5,0-30-13.5-30-30s13.5-30,30-30   s30,13.5,30,30S437.5,122,421,122z M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z    M256,152c-57.9,0-105,47.1-105,105s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z M256,152c-57.9,0-105,47.1-105,105   s47.1,105,105,105s105-47.1,105-105S313.9,152,256,152z" />
+                    </g>
+                </svg>
+            </a>
+
+            <!--YOUTUBE SVG-->
+            <a class="footer-redes__link" href="https://www.youtube.com/">
+                <svg class="footer-redes__img" id="Bold" enable-background="new 0 0 24 24" height="512"
+                    viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentcolor"
+                        d="m23.469 5.929.03.196c-.29-1.029-1.073-1.823-2.068-2.112l-.021-.005c-1.871-.508-9.4-.508-9.4-.508s-7.51-.01-9.4.508c-1.014.294-1.798 1.088-2.083 2.096l-.005.021c-.699 3.651-.704 8.038.031 11.947l-.031-.198c.29 1.029 1.073 1.823 2.068 2.112l.021.005c1.869.509 9.4.509 9.4.509s7.509 0 9.4-.509c1.015-.294 1.799-1.088 2.084-2.096l.005-.021c.318-1.698.5-3.652.5-5.648 0-.073 0-.147-.001-.221.001-.068.001-.149.001-.23 0-1.997-.182-3.951-.531-5.846zm-13.861 9.722v-7.293l6.266 3.652z" />
+                </svg>
+            </a>
+
+            <!--FACEBOOK SVG-->
+            <a class="footer-redes__link" href="https://www.facebook.com/">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg class="footer-redes__img" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path fill="currentcolor" d="M448,0H64C28.704,0,0,28.704,0,64v384c0,35.296,28.704,64,64,64h192V336h-64v-80h64v-64c0-53.024,42.976-96,96-96h64v80
+			h-32c-17.664,0-32-1.664-32,16v64h80l-32,80h-48v176h96c35.296,0,64-28.704,64-64V64C512,28.704,483.296,0,448,0z" />
+                        </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                </svg>
+            </a>
+
+            <!--TWITTER SVG-->
+            <a class="footer-redes__link" href="https://twitter.com/" target="_blank">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg class="footer-redes__img" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path fill="currentcolor" d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z" />
+                        </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                </svg>
+            </a>
+        </div>
+
+        <!--COPYRIGHT-->
+        <div class="footer-copyright">
+            <h3 class="footer-copyright__information">Copyright <svg class="footer-copyright__img" id="Layer_1"
+                    enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentcolor"
+                        d="m256 512c-68.38 0-132.667-26.629-181.02-74.98-48.351-48.353-74.98-112.64-74.98-181.02s26.629-132.667 74.98-181.02c48.353-48.351 112.64-74.98 181.02-74.98s132.667 26.629 181.02 74.98c48.351 48.353 74.98 112.64 74.98 181.02s-26.629 132.667-74.98 181.02c-48.353 48.351-112.64 74.98-181.02 74.98zm0-472c-119.103 0-216 96.897-216 216s96.897 216 216 216 216-96.897 216-216-96.897-216-216-216zm90.313 307.924c7.81-7.811 7.811-20.474 0-28.284-7.812-7.811-20.475-7.81-28.284 0-35.092 35.09-92.188 35.092-127.28 0-16.998-16.999-26.36-39.6-26.36-63.64s9.362-46.641 26.36-63.64c35.092-35.092 92.188-35.09 127.28 0 7.811 7.811 20.474 7.811 28.284 0s7.81-20.474 0-28.284c-50.688-50.687-133.162-50.686-183.848 0-24.555 24.554-38.077 57.2-38.077 91.924s13.522 67.37 38.077 91.924c25.343 25.343 58.633 38.015 91.924 38.015s66.581-12.672 91.924-38.015z" />
+                </svg>2021.
+                Boonnie guitars todos los derechos reservados.</h3>
+        </div>
+    </footer>
+</body>
+
+</html>
