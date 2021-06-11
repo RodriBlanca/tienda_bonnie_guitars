@@ -306,6 +306,11 @@ $paddings: (
     }
   }
 
+  .reviews-section__information {
+    padding: map-get($paddings, lados);
+    text-align: justify;
+  }
+
   .contacto-section__title,
   .reviews-section__title,
   .accesorios-section__title,
@@ -401,87 +406,8 @@ $paddings: (
     }
   }
 
-  /*FOOTER ESTILOS*/
-  .footer {
-    background-color: $negro;
-    color: white;
-    grid-column: 1/2;
-    grid-row: 3/4;
-    @include flexbox(column);
-    text-align: center;
-
-    &-logo__title {
-      font-family: "Cinzel Decorative", cursive;
-
-      &2 {
-        font-family: "Allura", cursive;
-      }
-    }
-
-    &-nav {
-      padding: 0 20px 0 0;
-    }
-
-    &-menu {
-      display: flex;
-      justify-content: center;
-      padding: map-get($paddings, cero);
-
-      &__item {
-        font-size: 5vw;
-        color: white;
-      }
-    }
-
-    &-submenu {
-      padding: map-get($paddings, cero);
-
-      &__item {
-        font-size: 4vw;
-      }
-
-      &__link {
-        color: $grisClaro;
-        text-decoration: none;
-      }
-    }
-
-    &-redes {
-      margin: 15px 0 0 0;
-      padding: 1vw;
-      background-color: $negroGris;
-      transition-property: background-color;
-      transition-duration: 2s;
-
-      /*EFECTO CON HOVER PARA QUE AL PASAR POR ENCIMA DEL CONTENEDOR CON LAS REDES CAMBIE DE COLOR Y DESTAQUE MÁS*/
-      &:hover {
-        background-color: $rojo;
-      }
-
-      &__img {
-        color: white;
-        margin: 0 5vw 0 5vw;
-      }
-
-      &__link {
-        text-decoration: none;
-      }
-    }
-
-    &-copyright {
-      margin: 10px 0 0 0;
-
-      &__img {
-        color: $grisClaro;
-        width: 3vw;
-        height: 3vw;
-      }
-
-      &__information {
-        font-size: 3.5vw;
-        color: $grisClaro;
-      }
-    }
+  .iframe-container {
+    display: none;
   }
 
   .formulario {
@@ -552,27 +478,116 @@ $paddings: (
   }
 
   .strato-container__video,
-  .taylor-container__video,
+  .academy-container__video,
   .telecaster-container__video,
   .sg-container__video,
   .paul-container__video {
     max-width: 100%;
+  }
+
+  /*FOOTER ESTILOS*/
+  .footer {
+    background-color: $negro;
+    color: white;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    @include flexbox(column);
+    text-align: center;
+
+    &-logo__title {
+      font-family: "Cinzel Decorative", cursive;
+
+      &2 {
+        font-family: "Allura", cursive;
+      }
+    }
+
+    &-nav {
+      padding: 0 20px 0 0;
+    }
+
+    &-menu {
+      display: flex;
+      justify-content: center;
+      padding: map-get($paddings, cero);
+
+      &__item {
+        font-size: 5vw;
+        color: white;
+      }
+    }
+
+    &-submenu {
+      padding: map-get($paddings, cero);
+
+      &__item {
+        font-size: 4vw;
+      }
+
+      &__link {
+        color: $grisClaro;
+        text-decoration: none;
+      }
+    }
+
+    &-redes {
+      margin: 15px 0 0 0;
+      padding: 5px;
+      background-color: $negroGris;
+      transition-property: background-color;
+      transition-duration: 2s;
+
+      /*EFECTO CON HOVER PARA QUE AL PASAR POR ENCIMA DEL CONTENEDOR CON LAS REDES CAMBIE DE COLOR Y DESTAQUE MÁS*/
+      &:hover {
+        background-color: $rojo;
+      }
+
+      &__img {
+        color: white;
+        margin: 0 5vw 0 5vw;
+      }
+
+      &__link {
+        text-decoration: none;
+      }
+    }
+
+    &-copyright {
+      margin: 10px 0 0 0;
+
+      &__img {
+        color: $grisClaro;
+        width: 3vw;
+        height: 3vw;
+      }
+
+      &__information {
+        font-size: 3.5vw;
+        color: $grisClaro;
+      }
+    }
   }
 }
 
 @media screen and (min-width: 600px) {
   .body {
     grid-template-columns: 1fr;
-    grid-template-rows: 115px 1fr 560px;
+    grid-template-rows: 115px 1fr 400px;
   }
 
   .header {
-    height: 115px;
+    grid-column: 1/2;
+    grid-row: 1/2;
 
     &-logo,
     &-menu {
       display: flex;
       justify-content: center;
+    }
+
+    &-logo__title,
+    &-logo__title2 {
+      font-size: 30px;
     }
 
     &-menu {
@@ -590,7 +605,7 @@ $paddings: (
 
       &__link {
         color: white;
-        font-size: 3vw;
+        font-size: 20px;
         transition-property: color;
         transition-duration: 0.2s;
 
@@ -642,6 +657,11 @@ $paddings: (
   .formulario-input,
   .formulario-select {
     height: 5vw;
+  }
+
+  .iframe-card__link {
+    text-decoration: none;
+    color: $rojo;
   }
 
   .carrusel {
@@ -703,13 +723,35 @@ $paddings: (
     }
   }
 
-  .footer-logo__title,
-  .footer-logo__title2 {
-    font-size: 5vw;
-  }
+  .footer {
+    &-logo__title,
+    &-logo__title2 {
+      font-size: 30px;
+    }
 
-  .footer-nav {
-    padding: 0 30px 0 0;
+    &-menu__item {
+      font-size: 25px;
+      margin: 0 7px;
+    }
+
+    &-submenu__item {
+      font-size: 20px;
+    }
+
+    &-copyright {
+      &__information {
+        font-size: 15px;
+      }
+
+      &__img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    &-nav {
+      padding: 0;
+    }
   }
 }
 
@@ -720,12 +762,12 @@ $paddings: (
 
   .header {
     &-logo__title {
-      font-size: 7vw;
+      font-size: 35px;
       margin-top: 10px;
     }
 
     &-menu__link {
-      font-size: 3vw;
+      font-size: 20px;
     }
   }
 
@@ -829,21 +871,21 @@ $paddings: (
     }
 
     &-copyright__information {
-      font-size: 2vw;
+      font-size: 17px;
     }
 
     &-copyright__img {
-      width: 1.7vw;
-      height: 1.7vw;
+      width: 17px;
+      height: 17px;
     }
 
     &-menu__item {
-      font-size: 3vw;
-      margin: 0 4vw 0 4vw;
+      font-size: 27px;
+      margin: 0 10px 0 10px;
     }
 
     &-submenu__item {
-      font-size: 2.5vw;
+      font-size: 22px;
     }
   }
 }
@@ -925,11 +967,27 @@ $paddings: (
       &__link {
         text-decoration: none;
         color: white;
+        display: block;
       }
 
       &:hover {
         background-color: rgb(218, 13, 13);
       }
+    }
+
+    &-boton {
+      width: 240px;
+      height: 50px;
+      background-color: $rojo;
+      margin: 0 0 15px 15px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      bottom: 15px;
+    }
+
+    &-link {
+      display: inline-block;
     }
 
     &-bottom {
@@ -1151,7 +1209,7 @@ $paddings: (
   }
 
   .strato-container,
-  .taylor-container,
+  .academy-container,
   .telecaster-container,
   .sg-container,
   .paul-container {
@@ -1177,7 +1235,7 @@ $paddings: (
   }
 
   .strato-information,
-  .taylor-information,
+  .academy-information,
   .telecaster-information,
   .sg-information,
   .paul-information {
@@ -1202,10 +1260,14 @@ $paddings: (
     color: $rojo;
   }
 
+  .mobile-container {
+    display: none;
+  }
+
   /* Sección guitarras */
 
-  .electric-section {
-    height: 2000px;
+  .electric-section,
+  .acoustic-section {
     width: 100%;
     background-color: $gris;
     display: flex;
@@ -1217,28 +1279,47 @@ $paddings: (
     }
   }
 
+  .acoustic-section {
+    background-color: rgb(231, 231, 231);
+  }
+
   .gibson-title,
-  .fender-title {
+  .fender-title,
+  .cort-title,
+  .taylor-title,
+  .yamaha-title {
     font-size: 35px;
     background: rgb(231, 231, 231);
-    margin: 20px 0;
+    margin: 20px 0 50px 0;
+  }
+
+  .taylor-title,
+  .yamaha-title {
+    background-color: $gris;
   }
 
   .gibson-container,
-  .fender-container {
+  .fender-container,
+  .cort-container,
+  .taylor-container,
+  .yamaha-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
   }
 
+  .taylor-container {
+    background-color: rgb(231, 231, 231);
+  }
+
   .guitar-card {
     height: 230px;
-    width: 430px;
+    width: 20.438vw;
     background-color: white;
     display: flex;
     justify-content: space-evenly;
-    margin: 15px 0;
+    margin: 10px 0;
     border-radius: 5px;
     box-shadow: 4px 4px 4px 0 rgb(83, 83, 83);
     transition-property: box-shadow;
@@ -1250,20 +1331,33 @@ $paddings: (
   }
 
   .guitar-container {
-    width: 200px;
+    width: 10.5vw;
     height: 230px;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .guitar-information {
-    width: 200px;
+    width: 7vw;
     right: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    &__title {
+      font-size: 17px;
+    }
+
+    &__color {
+      font-size: 15px;
+    }
+
+    &__price {
+      font-size: 15px;
+    }
   }
 
   .footer {
@@ -1433,7 +1527,7 @@ $paddings: (
   }
 
   .strato-container,
-  .taylor-container,
+  .academy-container,
   .telecaster-container,
   .sg-container,
   .paul-container {
@@ -1446,7 +1540,7 @@ $paddings: (
   }
 
   .strato-information,
-  .taylor-information,
+  .academy-information,
   .telecaster-information,
   .sg-information,
   .paul-information {
