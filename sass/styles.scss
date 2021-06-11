@@ -317,6 +317,7 @@ $paddings: (
   .guitarras-section__title {
     font-size: 7vw;
     padding: map-get($paddings, lados);
+    font-family: "Allura", cursive;
   }
 
   .iframe-card__title {
@@ -893,7 +894,7 @@ $paddings: (
 @media screen and (min-width: 1024px) {
   .body {
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 115px 1fr 390px;
+    grid-template-rows: 100px 1fr 390px;
   }
 
   .header {
@@ -905,6 +906,10 @@ $paddings: (
       font-size: 40px;
       padding: map-get($paddings, cero);
       margin-left: 50px;
+
+      &2 {
+        font-size: 40px;
+      }
     }
 
     &-menu {
@@ -925,6 +930,10 @@ $paddings: (
       width: 60vw;
       height: 28vw;
     }
+  }
+
+  .iframe-container {
+    display: block;
   }
 
   .cards-container {
@@ -1177,17 +1186,17 @@ $paddings: (
     width: 700px;
 
     &-label {
-      font-size: 4vw;
+      font-size: 35px;
       padding-top: 15px;
       padding-bottom: 15px;
     }
 
     &-input {
-      height: 4vw;
+      height: 35px;
     }
 
     &-select {
-      height: 4vw;
+      height: 35px;
       width: 200px;
     }
 
@@ -1200,7 +1209,7 @@ $paddings: (
   .reviews-section__title,
   .accesorios-section__title,
   .guitarras-section__title {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   .reviews-section__description {
@@ -1406,7 +1415,7 @@ $paddings: (
 @media screen and (min-width: 1200px) {
   .body {
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 115px 1fr 400px;
+    grid-template-rows: 100px 1fr 400px;
   }
 
   .header {
@@ -1414,14 +1423,18 @@ $paddings: (
     grid-row: 1/2;
 
     &-logo__title {
-      font-size: 40px;
+      font-size: 45px;
+      &2 {
+        font-size: 45px;
+      }
     }
 
     &-menu {
       margin-right: 50px;
 
       &__link {
-        font-size: 30px;
+        font-size: 25px;
+        margin: 0 10px;
       }
     }
   }
@@ -1552,16 +1565,16 @@ $paddings: (
   .reviews-section__title,
   .accesorios-section__title,
   .guitarras-section__title {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   .formulario-label {
-    font-size: 3vw;
+    font-size: 35px;
   }
 
   .formulario-input,
   .formulario-select {
-    height: 3vw;
+    height: 35px;
   }
 
   .formulario-boton {
