@@ -310,7 +310,6 @@ $paddings: (
     margin: 0 0 50px 0;
   }
 
-
   .guitar-information {
     background-color: rgb(209, 209, 209);
     padding: 10px 0;
@@ -694,7 +693,6 @@ $paddings: (
   }
 
   .formulario {
-
     &-label {
       text-align: start;
       font-size: 5vw;
@@ -1057,7 +1055,7 @@ $paddings: (
       padding-bottom: 16px;
       background-color: $rojo;
       margin: 0 10px 10px 10px;
-      text-align: center; 
+      text-align: center;
       text-decoration: none;
       color: white;
       transition-property: background-color;
@@ -1428,6 +1426,7 @@ $paddings: (
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
   }
 
   .guitar-information,
@@ -1464,7 +1463,7 @@ $paddings: (
     color: white;
     text-decoration: none;
     font-size: 80px;
-    font-family: 'Roboto';
+    font-family: "Roboto";
   }
 
   .galeria-instrumentos {
@@ -1639,7 +1638,7 @@ $paddings: (
     color: white;
     text-decoration: none;
     font-size: 80px;
-    font-family: 'Roboto';
+    font-family: "Roboto";
   }
 
   .galeria-instrumentos {

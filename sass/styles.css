@@ -1588,6 +1588,7 @@ img {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    overflow: hidden;
   }
   .guitar-information,
   .card-information {
@@ -1633,7 +1634,7 @@ img {
     color: white;
     text-decoration: none;
     font-size: 80px;
-    font-family: 'Roboto';
+    font-family: "Roboto";
   }
   .galeria-instrumentos {
     display: -webkit-box;
@@ -1830,7 +1831,7 @@ img {
     color: white;
     text-decoration: none;
     font-size: 80px;
-    font-family: 'Roboto';
+    font-family: "Roboto";
   }
   .galeria-instrumentos {
     display: -webkit-box;
