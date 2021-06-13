@@ -318,6 +318,26 @@ img {
     padding: 0 3vw 0 3vw;
     text-align: justify;
   }
+  .guitar-card {
+    margin: 0 0 50px 0;
+  }
+  .guitar-information {
+    background-color: #d1d1d1;
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .reviews-section__information {
     padding: 0 3vw 0 3vw;
     text-align: justify;
@@ -326,13 +346,16 @@ img {
   .reviews-section__title,
   .accesorios-section__title,
   .guitarras-section__title {
-    font-size: 7vw;
+    font-size: 30px;
     padding: 0 3vw 0 3vw;
     font-family: "Allura", cursive;
   }
   .iframe-card__title {
     font-size: 5vw;
     padding: 0 3vw 0 3vw;
+  }
+  .galeria {
+    display: none;
   }
   .carrusel {
     overflow: hidden;
@@ -428,8 +451,10 @@ img {
   }
   .banner-text {
     padding: 0 3vw 0 3vw;
-    color: white;
+    color: black;
     margin: 0;
+    background-color: white;
+    padding: 20px 5px;
   }
   .banner-link {
     text-decoration: none;
@@ -519,6 +544,20 @@ img {
   .sg-container__video,
   .paul-container__video {
     max-width: 100%;
+  }
+  .cards-container {
+    display: none;
+  }
+  .cards-section__title {
+    display: none;
+  }
+  .guitar-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   /*FOOTER ESTILOS*/
   .footer {
@@ -615,8 +654,8 @@ img {
   .body {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 115px 1fr 400px;
-        grid-template-rows: 115px 1fr 400px;
+    -ms-grid-rows: 100px 1fr 400px;
+        grid-template-rows: 100px 1fr 400px;
   }
   .header {
     -ms-grid-column: 1;
@@ -714,13 +753,24 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .guitar-container {
+    padding-top: 25px;
+  }
+  .guitar-card {
+    width: 400px;
+    border: 1px solid #222222;
+    -webkit-box-shadow: 6px 6px 6px 0 #222222;
+            box-shadow: 6px 6px 6px 0 #222222;
+  }
   .formulario-label {
     text-align: start;
     font-size: 5vw;
   }
-  .formulario-input,
-  .formulario-select {
+  .formulario-input, .formulario-select {
     height: 5vw;
+  }
+  .formulario-boton {
+    width: 125px;
   }
   .iframe-card__link {
     text-decoration: none;
@@ -824,8 +874,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .body {
-    -ms-grid-rows: 115px 1fr 500px;
-        grid-template-rows: 115px 1fr 500px;
+    -ms-grid-rows: 100px 1fr 500px;
+        grid-template-rows: 100px 1fr 500px;
   }
   .header-logo__title {
     font-size: 35px;
@@ -842,6 +892,12 @@ img {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .main-galery {
     display: none;
@@ -882,6 +938,10 @@ img {
     background: url(../material/pexels-cristian-benavides-2049414.jpg);
     background-size: cover;
     background-position-y: center;
+    font-family: "Allura", cursive;
+    font-size: 45px;
+    text-decoration: none;
+    color: white;
   }
   .galeria-acustica {
     -ms-grid-column: 4;
@@ -893,6 +953,10 @@ img {
     background-image: url(../material/pexels-viktor-mogilat-3977174.jpg);
     background-size: cover;
     background-position-y: center;
+    font-family: "Allura", cursive;
+    font-size: 45px;
+    text-decoration: none;
+    color: white;
   }
   .galeria-puas {
     -ms-grid-column: 4;
@@ -904,6 +968,10 @@ img {
     background-image: url(../material/pexels-rombo-3383703.jpg);
     background-size: cover;
     background-position-y: center;
+    font-family: "Allura", cursive;
+    font-size: 45px;
+    text-decoration: none;
+    color: white;
   }
   .container-carrusel {
     width: 100%;
@@ -921,12 +989,15 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .formulario {
+    width: 600px;
+  }
   .formulario-label {
-    font-size: 4vw;
+    font-size: 30px;
   }
   .formulario-input,
   .formulario-select {
-    height: 4vw;
+    height: 30px;
   }
   .intrumentos {
     -ms-grid-column: 1;
@@ -1050,17 +1121,18 @@ img {
     display: block;
   }
   .cards-container {
-    height: 1200px;
+    height: 1fr;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .cards {
     height: 500px;
-    width: 270px;
+    width: 230px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1081,9 +1153,9 @@ img {
     margin: 15px 0 0 0;
   }
   .cards-buttons {
-    width: 240px;
+    width: 210px;
     height: 50px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     background-color: #d83939;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1112,17 +1184,20 @@ img {
     background-color: #da0d0d;
   }
   .cards-boton {
-    width: 240px;
-    height: 50px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     background-color: #d83939;
-    margin: 0 0 15px 15px;
+    margin: 0 10px 10px 10px;
     text-align: center;
     text-decoration: none;
     color: white;
-    bottom: 15px;
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 0.7s;
+            transition-duration: 0.7s;
   }
-  .cards-link {
-    display: inline-block;
+  .cards-boton:hover {
+    background-color: #da0d0d;
   }
   .cards-bottom {
     display: -webkit-box;
@@ -1139,9 +1214,13 @@ img {
         -ms-flex-align: center;
             align-items: center;
     text-align: justify;
+    line-height: 20px;
   }
   .cards-bottom__description {
     margin: 0 15px 15px 15px;
+  }
+  .cards-section__title {
+    display: block;
   }
   .les-paul {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../material/pruebas/1956-gibson-les-paul-custom.jpg) no-repeat 50%;
@@ -1446,6 +1525,10 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -1455,12 +1538,193 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .yamaha-container {
+    margin: 0 0 15px 0;
+  }
   .taylor-container {
     background-color: #e7e7e7;
   }
-  .guitar-card {
+  .guitar-card,
+  .card {
     height: 230px;
     width: 20.438vw;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 4px 4px 4px 0 #535353;
+            box-shadow: 4px 4px 4px 0 #535353;
+    -webkit-transition-property: -webkit-box-shadow;
+    transition-property: -webkit-box-shadow;
+    transition-property: box-shadow;
+    transition-property: box-shadow, -webkit-box-shadow;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+  }
+  .guitar-card:hover,
+  .card:hover {
+    -webkit-box-shadow: 5px 5px 5px 0 #d83939;
+            box-shadow: 5px 5px 5px 0 #d83939;
+  }
+  .guitar-container,
+  .pic-container {
+    width: 10.5vw;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .guitar-information,
+  .card-information {
+    width: 7vw;
+    right: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    background-color: white;
+  }
+  .guitar-information__title,
+  .card-information__title {
+    font-size: 17px;
+  }
+  .guitar-information__color,
+  .card-information__color {
+    font-size: 15px;
+  }
+  .guitar-information__price,
+  .card-information__price {
+    font-size: 15px;
+  }
+  .accesorios-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .galeria-instrumentos,
+  .galeria-acustica,
+  .galeria-puas {
+    color: white;
+    text-decoration: none;
+    font-size: 80px;
+    font-family: 'Roboto';
+  }
+  .galeria-instrumentos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 25px;
+  }
+  .galeria-instrumentos::before {
+    content: "";
+    width: 345px;
+    height: 5px;
+    background-color: white;
+    margin-top: 25px;
+  }
+  .galeria-instrumentos::after {
+    content: "";
+    width: 345px;
+    height: 5px;
+    background-color: white;
+  }
+  .galeria-acustica {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-right: 25px;
+  }
+  .galeria-acustica::before {
+    content: "";
+    width: 345px;
+    height: 5px;
+    background-color: white;
+    margin-top: 25px;
+  }
+  .galeria-acustica::after {
+    content: "";
+    width: 345px;
+    height: 5px;
+    background-color: white;
+  }
+  .galeria-puas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 25px;
+  }
+  .galeria-puas::before {
+    content: "";
+    width: 390px;
+    height: 5px;
+    background-color: white;
+  }
+  .galeria-puas::after {
+    content: "";
+    width: 390px;
+    height: 5px;
+    background-color: white;
+    margin-bottom: 25px;
+  }
+  .card {
+    height: 200px;
+    width: 300px;
     background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1479,49 +1743,12 @@ img {
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
   }
-  .guitar-card:hover {
-    -webkit-box-shadow: 5px 5px 5px 0 #d83939;
-            box-shadow: 5px 5px 5px 0 #d83939;
+  .card-container {
+    width: 150px;
+    height: 300px;
   }
-  .guitar-container {
-    width: 10.5vw;
-    height: 230px;
-    background-color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .guitar-information {
-    width: 7vw;
-    right: 150px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .guitar-information__title {
-    font-size: 17px;
-  }
-  .guitar-information__color {
-    font-size: 15px;
-  }
-  .guitar-information__price {
-    font-size: 15px;
+  .card-name {
+    width: 150px;
   }
   .footer {
     -ms-grid-column: 1;
@@ -1603,6 +1830,7 @@ img {
     color: white;
     text-decoration: none;
     font-size: 80px;
+    font-family: 'Roboto';
   }
   .galeria-instrumentos {
     display: -webkit-box;
@@ -1755,62 +1983,6 @@ img {
     margin: 0;
     padding: 10px;
     width: 150px;
-  }
-  .accesorios-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .card {
-    height: 350px;
-    width: 300px;
-    background-color: whitesmoke;
-    border-radius: 15px;
-    -webkit-box-shadow: 0 5px 5px #797979;
-            box-shadow: 0 5px 5px #797979;
-    margin: 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-transition-property: -webkit-box-shadow;
-    transition-property: -webkit-box-shadow;
-    transition-property: box-shadow;
-    transition-property: box-shadow, -webkit-box-shadow;
-  }
-  .card:hover {
-    -webkit-box-shadow: 0 5px 5px #d83939;
-            box-shadow: 0 5px 5px #d83939;
-  }
-  .card-img {
-    width: 100%;
-    height: 270px;
-    border-radius: 15px 15px 0 0;
-  }
-  .card-name {
-    margin-top: 25px;
-    text-decoration: none;
-    color: black;
-  }
-  .card-name:hover {
-    color: #d83939;
   }
   .footer {
     -ms-grid-column: 1;
